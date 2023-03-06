@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply h-screen w-full flex flex-col bg-[#eeeeee] text-xs xl:text-base 2xl:text-xl;
+    }
+    body {
+        @apply overflow-x-hidden;
+    }
+
+    button {
+        @apply bg-green-500 py-4 rounded text-2xl text-white active:translate-y-2;
+    }
+
+    table {
+        @apply w-full text-sm text-left text-gray-500;
+    }
+
+    thead {
+        @apply text-xs text-gray-700 uppercase bg-gray-50;
+    }
+
+    tbody {
+        @apply bg-white border-b dark:bg-gray-800;
+    }
+
+    th {
+        @apply px-6 py-3;
+    }
+    td {
+        @apply px-6 py-4;
+    }
+}
